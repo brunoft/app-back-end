@@ -1,6 +1,6 @@
 import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn } from 'typeorm';
 
-@Entity('users')
+@Entity('usuario')
 class User {
   @PrimaryGeneratedColumn('uuid')
   id: string;
@@ -13,6 +13,9 @@ class User {
 
   @Column()
   password: string;
+
+  @Column()
+  saldo: number;
 
   @CreateDateColumn()
   created_at: Date;

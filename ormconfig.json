@@ -1,10 +1,10 @@
 {
   "type": "postgres",
-  "host": "localhost",
+  "host": "pgac.cnolijchjnvc.sa-east-1.rds.amazonaws.com",
   "port": 5432,
-  "username": "postgres",
-  "password": "docker",
-  "database": "pagbus_postgres",
+  "username": "pgac",
+  "password": "Mochileiros2020",
+  "database": "pgac_rds",
   "entities": [
     "./src/models/*ts"
   ],
