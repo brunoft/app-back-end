@@ -15,13 +15,16 @@ class User {
   password: string;
 
   @Column()
-  saldo: number;
+  saldo_centavos: number;
 
   @CreateDateColumn()
   created_at: Date;
 
   @UpdateDateColumn()
   updated_at: Date;
+
+  @Column()
+  saldo: number;
 
 }
 

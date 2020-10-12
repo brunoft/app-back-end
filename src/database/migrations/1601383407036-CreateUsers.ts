@@ -28,8 +28,8 @@ export class CreateUsers1601383407036 implements MigrationInterface {
                         isUnique: true,
                     },
                     {
-                        name: 'saldo',
-                        type: 'varchar',
+                        name: 'saldo_centavos',
+                        type: 'int4',
                     },
                     {
                         name: 'created_at',
@@ -40,6 +40,10 @@ export class CreateUsers1601383407036 implements MigrationInterface {
                         name: 'updated_at',
                         type: 'timestamp',
                         default: 'now()',
+                    },
+                    {
+                        name: 'saldo',
+                        type: 'numeric',
                     },    
                 ],
             }),
